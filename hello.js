@@ -1,16 +1,7 @@
-Module.register("helloworld",{
+Module.register("MMM-Sinewaves",{
 	// Default module config.
 	defaults: {
 		text: "Hello World!"
-	},
-
-
-
-	// Override dom generator.
-	getDom: function() {
-		var wrapper = document.createElement("div");
-		wrapper.innerHTML = this.config.text;
-		return wrapper;
 	},
 
 	getScripts: function() {
@@ -21,4 +12,12 @@ Module.register("helloworld",{
 			//'https://code.jquery.com/jquery-2.2.3.min.js',  // this file will be loaded from the jquery servers.
 		]
 	},
+
+	// Override dom generator.
+	getDom: function() {
+		var wrapper = document.createElement("div");
+		wrapper.innerHTML = this.config.text;
+		return wrapper;
+	},
+
 });
